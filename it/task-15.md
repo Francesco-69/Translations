@@ -1,26 +1,26 @@
-This problem introduces popular algorithm of the "linear search", which should be learnt thoroughly as it is often
-used in programming more complex tasks (sorting etc.)
+Questo problema introduce il popolare algoritmo della "ricerca lineare" che dovrebbe essere appreso a fondo e come spesso accade
+utilizzato nella programmazione di compiti più complessi (ordinamento ecc.).
 
-Very common operation on sequence of values, or arrays is to find its extremal value - maximum or minimum. To achieve
-this one need to store **current maximum** (or minimum respectively) in a separate variable, and then run through array,
-comparing each of its elements to this variable. Whenever next value is greater than this temporary variable, this
-value should be copied into it (as a new maximum).
+Operazione molto comune su sequenza di valori, o array è quello di trovare il valore minimo o massimo. Per farlo ho bisogno di 
+memorizzare **massimo corrente** (o minimo) in una variable, e quindi scorrere attraverso l'array, confrontando ciascun valore
+con questa variabile. Ogni volta che il valore successivo è superiore a quello della variabile temporanea questo valore 
+dovrebbe essere copiato in essa (come nuovo massimo).
 
-At the end of the pass this temporary variable will hold the extremum value.
+Alla fine del passaggio questa variabile temporanea manterrà il valore estremo (min o max.
 
-**Input data** will give you exactly `300` numbers in a single line.  
-**Answer** should contain maximum and minimum of these values, separated by space.
+**Dati Input** ti daranno esattamente `300` numeri in una singola riga.  
+**Risposta** dovrebbe contenere il massimo e il minimo di questi valori, separati da spazio.
 
-<span class="red">Important:</span> at this problem some people ask **"How should I copy so many numbers at my
-code and put commas between, as I create array / list of them..."**  
-Please, don't do this! Instead [**watch my demo video**](https://www.youtube.com/watch?v=c6WWZe12ves)
-(from about 4:00) to see how we use
-standard input to read numbers when running on-site!
+<span class="red">Importante:</span> a questo problema alcuni chiedono **"Come devo copiare tanti numeri nel mio codice, come creo
+un array / elenco dei numeri..."**  
+Ti prego, non fare così! Invece [**Guarda il mio video demo**](https://www.youtube.com/watch?v=c6WWZe12ves)
+(dal minuto 4:00) puoi vedere come usiamo lo
+standard input per leggere i numeri quando si esegue on-site!
 
-**Example:**
+**Esempio:**
 
-	input data:
+	dati di input:
 	1 3 5 7 9 11 ... 295 297 299 300 298 296 ... 12 10 8 6 4 2
 	
-	answer:
+	risposta:
 	300 1
