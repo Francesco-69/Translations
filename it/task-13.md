@@ -1,21 +1,22 @@
-This program resembles more complex algorithms for calculation CRC and other checksums and also hash-functions on
-character strings. Besides it will provide you with one more exercise on splitting values to decimal digits. You
-may want to try [Sum of Digits](./sum-of-digits) before this one.
+Questo programma assomiglia ad algoritmi più complessi per il calcolo del CRC e di altri checksums nonchè a funzioni hash su
+stringhe di caratteri. Inoltre fornisce un ulteriore esercizio sulla suddivisione dei valori in cifre decimali. Potresti
+provare [Somma delle Cifre](./sum-of-digits) prima di questo.
 
-Let us calculate sum of digits, as earlier, but multiplying each digit by its position (counting from the left, starting
-from 1). For example, given the value `1776` we calculate such **weighted** sum of digits (let us call it "wsd") as:
+Calcoliamo la somma delle cifre, come in precedenza, moltiplicando ogni cifra per la sua posizione (contando da sinistra a destra
+partendo da  1). Ad esempio, dato il valore `1776` calcoliamo la somma **ponderata** delle cifre (chiamiamola  "wsd") come segue:
 
 	wsd(1776) = 1 * 1 + 7 * 2 + 7 * 3 + 6 * 4 = 60
 
-**Input data** will give the number of test-cases in the first line.  
-Values themselves are in the second line. For each of these values you are to calculate weighted sum of digits.  
-**Answer:** as usually, put results in one line, separating them with spaces.
+**Dati di Input** fornirà il numero di test nella prima riga.  
+I valori veri si trovano nella seconda riga. Per ciascuno di questi valori si deve calcolare la somma ponderata delle cifre.  
+**Risposta:** come di consueto, Inserire i risultati su una riga, separandoli con spazi.
 
 Example:
 
-    input data:
+    dati input:
 	3
 	9 15 1776
 	
-	answer:
+	risposta:
 	9 11 60
+
