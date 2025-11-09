@@ -42,4 +42,5 @@ La **risposta** dovrebbe contenere il numero segreto (anch'esso di `4` cifre). V
 	846
 
 
-*Here we use 3-digit values for brevity, but the algorithm is the same.*
+*Qui utilizziamo valori a 3 cifre per brevità, ma l'algoritmo è lo stesso.*
+
