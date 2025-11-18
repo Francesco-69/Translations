@@ -1,31 +1,32 @@
 <!-- #Fahrenheit to Celsius -->
-This programming exercise is roughly the same as counting sums in loop, but it needs bit more calculations.
+Questo esercizio di programmazione è più o meno lo stesso del conteggio delle somme in un ciclo, ma richiede qualche calcolo in più.
 
 <div class="text-center">
 	<img alt="fahrenheit and celsius" src="https://codeabbey.github.io/data/fahrenheit_celsius.png"/>
 </div>
 
-*Note: the problem [Rounding](./rounding) explains the rounding algorithm which is used in this task.*
+*Nota: il problema [Rounding](./rounding) spiega l'algoritmo di arrotondamento utilizzato in questa attività.*
 
-There are two widespread systems of measuring temperature - Celsius and Fahrenheit. First is quite popular in Europe
-and second is well in use in United States for example.
+Esistono due sistemi di misurazione della temperatura molto diffusi: Celsius e Fahrenheit. Il primo è molto diffuso in Europa,
+mentre il secondo è molto utilizzato, ad esempio, negli Stati Uniti.
 
-By Celsius scale water freezes at 0 degrees and boils at 100 degrees. By Fahrenheit water freezes
-at 32 degrees and boils at 212 degrees. You may learn more from [wikipedia on Fahrenheit][wiki]. Use these two points
-for conversion of other temperatures.
+Secondo la scala Celsius, l'acqua congela a 0 gradi e bolle a 100 gradi. Secondo la scala Fahrenheit, l'acqua congela
+a 32 gradi e bolle a 212 gradi. Puoi trovare maggiori informazioni su [wikipedia on Fahrenheit][wiki]. Usa questi due punti
+per la conversione di altre temperature.
 
 [wiki]: http://en.wikipedia.org/wiki/Fahrenheit
 
-You are to write program to convert degrees of Fahrenheit to Celsius.
+Devi scrivere un programma per convertire i gradi Fahrenheit in Celsius.
 
-**Input data** contains `N+1` values, first of them is `N` itself (**Note** that you should not try to convert it).  
-**Answer** should contain exactly `N` results, rounded to nearest integer and separated by spaces.
+I **dati di input** contengono `N+1` valori, il primo dei quali è `N` stesso (**Nota**: non dovresti provare a convertirlo).
+La ​​**risposta** dovrebbe contenere esattamente `N` risultati, arrotondati all'intero più vicino e separati da spazi.
 
-Example:
+Esempio:
 
-    data:
+    dati input:
     5 495 353 168 -39 22
-    answer:
+    risposta:
     257 178 76 -39 -6
 
-*Please note that first `5` is not a temperature, but the amount of values to convert!*
+
+*Si prega di notare che il primo `5` non è una temperatura, ma la quantità di valori da convertire!*
