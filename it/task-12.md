@@ -1,47 +1,48 @@
-Dealing with remainders may cause heavy headache to novice programmers. Let us write a simple program which
-has this operation for its core to study integer division better. At the same time we'll have some practice in
-handing dates - which sometimes gives headache even to experienced coders.
+Gestire i resti può causare grossi grattacapi ai programmatori alle prime armi. Scriviamo un semplice programma che
+ha questa operazione al suo centro per studiare meglio la divisione intera. Allo stesso tempo, faremo un po' di pratica nella
+gestione delle date, che a volte crea grattacapi anche ai programmatori più esperti.
 
 
-In arithmetic, the remainder (or modulus) is the amount "left over" after performing the division of two integers
-which do not divide evenly (from [Wiki][wiki]). This task will provide further practice with modulo operation.
+In aritmetica, il resto (o modulo) è la quantità "rimasta" dopo aver eseguito la divisione di due numeri interi
+che non sono divisibili in parti uguali (da [Wiki][wiki]). Questo esercizio fornirà ulteriore pratica con l'operazione modulo.
 
 [wiki]: http://en.wikipedia.org/wiki/Remainder
 
-Suppose, we are given two timestamps - for example, when the train or ferry boat starts its travel and when it finishes. This
-may look like:
+Supponiamo di ricevere due timestamp, ad esempio quando il treno o il traghetto inizia il suo viaggio e quando lo termina.
+Potrebbe apparire così:
 
     start: May 3, 17:08:30
 	end  : May 8, 12:54:15
 
-and we are curious to know, how much time (in days, hours, minutes and seconds) is spent in traveling (perhaps, to
-choose faster variant). How this could be achieved?
+E siamo curiosi di sapere quanto tempo (in giorni, ore, minuti e secondi) viene impiegato per viaggiare (forse, per
+scegliere una variante più veloce). Come si potrebbe ottenere questo risultato?
 
-One of the easiest way is:
+Uno dei modi più semplici è:
 
-- convert both timestamps to big numbers, representing seconds from the beginning of the month (or year, or century);
-- calculate their difference - i.e. travel time in seconds;
-- convert this difference back to days, hours, minutes and seconds.
+- convertire entrambi i timestamp in numeri grandi, che rappresentano i secondi dall'inizio del mese (o dell'anno o del secolo);
+- calcolare la loro differenza, ovvero il tempo di percorrenza in secondi;
+- riconvertire questa differenza in giorni, ore, minuti e secondi.
 
-First operation could be performed by multiplying minutes by `60` and hours by `60*60` etc. and summing all values up.  
-The third operation should be performed on contrary by several divisions with keeping remainders.
+La prima operazione potrebbe essere eseguita moltiplicando i minuti per `60` e le ore per `60*60` ecc. e sommando tutti i valori.
+La terza operazione dovrebbe essere eseguita al contrario, eseguendo diverse divisioni mantenendo i resti.
 
-In this task we are given several pair of timestamps. We suppose that both dates in the pair are always in the
-same month, so only number of day will be given. We want to calculate difference between timestamps in each pair.
+In questo compito ci vengono fornite diverse coppie di timestamp. Supponiamo che entrambe le date della coppia siano sempre nello
+stesso mese, quindi verrà fornito solo il numero del giorno. Vogliamo calcolare la differenza tra i timestamp in ciascuna coppia.
 
-**Input data:** the first line contains number of test-cases, other lines contain test-cases themselves.  
-Each test-case contains `8` numbers, `4` for each timestamp: `day1 hour1 min1 sec1 day2 hour2 min2 sec2` (second
-timestamp will always be later than first).  
-**Answer:** for each test-case you are to output difference as following `(days hours minutes seconds)` - please
-note brackets - separated by spaces.
+**Dati di input:** la prima riga contiene il numero di casi di test, le altre righe contengono i casi di test stessi.
+Ogni caso di test contiene `8` numeri, `4` per ogni timestamp: `giorno1 ora1 min1 sec1 giorno2 ora2 min2 sec2` (il secondo
+timestamp sarà sempre successivo al primo).
+**Risposta:** per ogni caso di test, la differenza deve essere visualizzata come segue `(giorni ore minuti secondi)` - si prega di
+notare le parentesi quadre - separate da spazi.
 
-Example:
+Esempio:
 
-    input data:
+    dati input:
     3
 	1 0 0 0 2 3 4 5
     5 3 23 22 24 4 20 45
     8 4 6 47 9 11 51 13
     
-	answer:
+	risposte:
     (1 3 4 5) (19 0 57 23) (1 7 44 26)
+
