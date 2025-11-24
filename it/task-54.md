@@ -1,38 +1,39 @@
-<!-- #Pythagorean Triples -->
-*This task is inspired by the discussion in the [Blog on algorithms by Faisal Rahman](http://algoexplode.wordpress.com/) on similar task from
+<!-- # Triple Pitagoriche -->
+*Questo compito è ispirato alla discussione nel [Blog sugli algoritmi di Faisal Rahman](http://algoexplode.wordpress.com/) su un compito simile da
 [ProjectEuler](http://projecteuler.net/problem=9)*
 
-As we know, the [Pythagorean Theorem](./pythagorean-theorem) tells us about the simple equation:
+Come sappiamo, il [Teorema di Pitagora](./pythagorean-theorem) ci parla della semplice equazione:
 
     a^2 + b^2 = c^2
 
-There really exist such triples `a, b, c` of **integer** numbers, which satisfy this equation. This is not self-evident
-fact, moreover there are no such triples for any other powers except `2` - this is the famous
-[Fermat Theorem](http://en.wikipedia.org/wiki/Fermat's_Last_Theorem) which could not be solved for more than `350`
-years.
+Esistono realmente terne `a, b, c` di numeri **interi** che soddisfano questa equazione. Questo non è un fatto ovvio,
+inoltre non esistono terne di questo tipo per altre potenze eccetto `2` - questo è il famoso
+[Teorema di Fermat](http://en.wikipedia.org/wiki/Fermat's_Last_Theorem) che non poté essere risolto per più di `350`
+anni.
 
-However, for the power of `2` there are countless amount of such triples. One of them `3, 4, 5`, for example.
+Tuttavia, per la potenza di `2` esistono innumerevoli terne di questo tipo. Una di queste, per esempio, `3, 4, 5`.
 
-Nevertheless, it is not always easy to find a triple satisfying some specific conditions:
+Tuttavia, non è sempre facile trovare una terna che soddisfi alcune condizioni specifiche:
 
-**In this problem you need to write a program which for given value of `s = a + b + c`
-will find the only triple which satisfies the equation.**
+**In questo problema devi scrivere un programma che, dato il valore di `s = a + b + c`
+trovi l'unica terna che soddisfa l'equazione.**
 
-For example, given sum of `12` the only `3, 4, 5` triple fits, for sum `30` the only `5, 12, 13` etc.
+Ad esempio, data la somma di `12`, si adattano solo `3, 4, 5`, per la somma di `30` si adattano solo `5, 12, 13` ecc.
 
-**Input data** will contain the number of test-cases in the first line.  
-Other lines will contain a single value each - the sum for which triple should be found.  
-**Answer** should contain the values of `c^2` for each triple found (it is equal to `a^2 + b^2` of course),
-separated with spaces.
+**I dati di input** conterranno il numero di casi di test nella prima riga.
+Le altre righe conterranno un singolo valore ciascuna, la somma per la quale si desidera trovare la tripla.
+**La risposta** dovrebbe contenere i valori di `c^2` per ogni tripla trovata (ovviamente è uguale a `a^2 + b^2`),
+separati da spazi.
 
-**Note:** the real values of `s` would be large enough, about `10e+7` - so the simplest solutions could be inefficient.
+**Nota:** i valori reali di `s` sarebbero sufficientemente grandi, circa `10e+7`, quindi le soluzioni più semplici potrebbero essere inefficienti.
 
-Example:
+Esempio:
 
-    input data:
+    dati input:
 	2
 	12
 	30
 	
-	answer:
+	risposta:
 	25 169
+
